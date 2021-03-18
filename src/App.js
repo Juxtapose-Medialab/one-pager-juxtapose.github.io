@@ -4,13 +4,14 @@ import {
   Route,
 } from "react-router-dom";
 
-import About from './pages/About';
+import Home from './pages/Home/Home';
+import About from './pages/About/About';
 
 function App() {
   return (
     <Router>
         <Switch>
-          <Route exact path="/"></Route>
+          <Route exact path="/" component={ Home }></Route>
           <Route path="/about" component={ About }></Route>
         </Switch>
     </Router>
