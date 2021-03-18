@@ -1,7 +1,24 @@
 /**
- * Import layout
+ * 10px = 1rem (:10)
  */
 
-.container {
+ html {
+  font-size: 62.5%;
+}
 
+ body {
+  margin: 0;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1540px;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+  background-color: blue;
+}
+
+.title {
+  font-size: 1rem;
 }
