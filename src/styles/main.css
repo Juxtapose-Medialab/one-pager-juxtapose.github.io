@@ -4,6 +4,10 @@
  * 10px = 1rem (:10)
  */
 
+ p {
+   margin: 0;
+ }
+
  html {
   font-size: 62.5%;
 }
