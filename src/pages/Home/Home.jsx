@@ -1,5 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Button } from 'react-bootstrap';
+import ProductIntroSection from '../../components/Productintrosection/ProductIntroSection';
+import ProductSlider from '../../components/ProductSlider/ProductSlider';
 
 class Home extends React.Component {
   render() {
@@ -10,9 +12,8 @@ class Home extends React.Component {
       // */}
 
       <Container>
-        <div>
-          Homepage
-        </div>
+        <ProductIntroSection />
+        <ProductSlider />
       </Container>
     )
   }
