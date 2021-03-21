@@ -4,6 +4,10 @@
  * 10px = 1rem (:10)
  */
 
+ p {
+   margin: 0;
+ }
+
  html {
   font-size: 62.5%;
 }
@@ -19,8 +23,13 @@
   padding: 0 3.2rem;
   margin: 0 auto;
   background-color: blue; */
+  max-width: 1440px;
 }
 
 .title {
   font-size: 1rem;
+}
+
+.juxtaposeImage {
+  width: 2rem;
 }
