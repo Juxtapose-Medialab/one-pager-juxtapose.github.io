@@ -23,8 +23,13 @@
   padding: 0 3.2rem;
   margin: 0 auto;
   background-color: blue; */
+  max-width: 1440px;
 }
 
 .title {
   font-size: 1rem;
+}
+
+.juxtaposeImage {
+  width: 2rem;
 }
