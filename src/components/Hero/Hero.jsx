@@ -20,9 +20,14 @@ class Hero extends React.Component {
       //     {/* <iframe src="https://player.vimeo.com/video/526906760?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Summer drone edit of Scheveningen.mp4"></iframe> */}
       //   </div>
       // </div>
-      <video className={ styles.heroVideo } autoPlay loop muted>
-        <source src={sample} type='video/mp4' />
-      </video>
+      <React.Fragment>
+        <video className={ styles.heroVideo } autoPlay loop muted>
+          <source src={sample} type='video/mp4' />
+        </video>
+        <div className={ styles.heroVideoOverlay }>
+          <h1 className={ styles.heroVideoTitle }>JUXTAPOSE</h1>
+        </div>
+      </React.Fragment>
     )
   }
 }

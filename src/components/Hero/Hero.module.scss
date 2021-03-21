@@ -34,5 +34,21 @@
 
 
 .heroVideo {
+  position: relative;
   width: 100%;
+  z-index: 0;
+}
+
+.heroVideoOverlay {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  color: green;
+  z-index: 99;
+}
+
+.heroVideoTitle {
+  font-size: 10rem;
+  color: white;
 }
