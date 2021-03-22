@@ -3,6 +3,11 @@ import styles from './Process.module.scss';
 import { Row, Col, Container } from 'react-bootstrap';
 import classNames from 'classnames/bind';
 
+import transfer from '../../static/images/transfer.svg';
+import crowd from '../../static/images/crowd.svg';
+import safety from '../../static/images/safety.svg';
+import arrowRight from '../../static/images/arrow-right.svg';
+
 const cn = classNames.bind(styles);
 
 class Process extends React.Component {
@@ -12,7 +17,7 @@ class Process extends React.Component {
           <h2 className={ styles.processTitle }>Process</h2>
           <div className={ styles.deskresearch }>
             <Container>
-              <h3 className={ styles.deskresearchSmallTitle }>Deskresearch</h3>
+              <h3 className={ styles.smallTitle }>Deskresearch</h3>
               <Row>
                 <Col xs={ 3 }>
                   <div className={ styles.deskresearchCard }>
@@ -44,20 +49,35 @@ class Process extends React.Component {
           </div>
 
           <div className={ styles.designGuidelines }>
-            <h3 className={ styles.deskresearchSmallTitle }>Design guidelines</h3>
-            <Row>
-              <Col xs={ 4 }>
-                <div>
-
+            <Container>
+              <h3 className={ cn('smallTitle', 'smallTitleWhite') }>Design guidelines</h3>
+              <Row>
+              <Col className={ styles.designGuidelinesCol } xs={ 4 }>
+                <div className={ styles.designGuideline }>
+                  <img src={ transfer } className={ styles.designGuideLineIcon } />
+                  <p className={ styles.designGuidelineText }>De doorstroom van mensen richting en vanuit Scheveningen moet worden bevorderd.</p>
+                </div>
+                <div className={ styles.designGuideline }>
+                  <img src={ crowd } className={ styles.designGuideLineIcon } />
+                  <p className={ styles.designGuidelineText }>Bezoekers moeten inzicht kunnen krijgen over de drukte in Scheveningen.</p>
+                </div>
+                <div className={ styles.designGuideline }>
+                  <img src={ safety } className={ styles.designGuideLineIcon } />
+                  <p className={ styles.designGuidelineText }>De veiligheid van de bezoekers moet gewaarborgd zijn en blijven.</p>
                 </div>
               </Col>
-              <Col xs={ 4 }>
-
+              <Col className={ styles.designGuidelinesCol2 } xs={ 4 }>
+                <img src={ arrowRight } className={ styles.designGuidelineArrow } />
               </Col>
-              <Col xs={ 4 }>
-
+              <Col className={ styles.designGuideLinesCol3 } xs={ 4 }>
+                <div className={ styles.designGuidelinesShape }>
+                  <div className={ styles.designGuidelinesShape2 }>
+                    <p className={ styles.designGuideLinesShapeText }>Hoe kunnen we er voor zorgen dat de drukte beperkt wordt of verdwijnt?</p>
+                  </div>
+                </div>
               </Col>
-            </Row>
+              </Row>
+            </Container>
           </div>
         </div>
     )
