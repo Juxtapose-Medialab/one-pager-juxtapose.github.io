@@ -16,7 +16,7 @@ import styles from "../../components/TeamMembers/TeamMembers.module.scss";
 class TeamMembers extends React.Component {
   render() {
     return (
-      <React.Fragment>
+      <Container>
         <div className={ styles.teamMembers }>
           <h2 className={ styles.teamMembersTitle }>About us</h2>
           <Row className={ styles.row }>
@@ -87,7 +87,7 @@ class TeamMembers extends React.Component {
             </Col>
           </Row>
         </div>
-      </React.Fragment>
+      </Container>
     )
   }
 }

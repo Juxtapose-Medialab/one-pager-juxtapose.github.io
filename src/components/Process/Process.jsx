@@ -1,6 +1,6 @@
 import React from "react";
 import styles from './Process.module.scss';
-import { Row, Col } from 'react-bootstrap';
+import { Row, Col, Container } from 'react-bootstrap';
 import classNames from 'classnames/bind';
 
 const cn = classNames.bind(styles);
@@ -11,31 +11,51 @@ class Process extends React.Component {
         <div className={ styles.process }>
           <h2 className={ styles.processTitle }>Process</h2>
           <div className={ styles.deskresearch }>
+            <Container>
               <h3 className={ styles.deskresearchSmallTitle }>Deskresearch</h3>
+              <Row>
+                <Col xs={ 3 }>
+                  <div className={ styles.deskresearchCard }>
+                    <h3 className={ styles.deskresearchCardTitle }>Richting & thema’s</h3>
+                    <p className={ styles.deskresearchCardText }>Om te kijken wat waar we ons op wilden focussen, hebben we gekeken naar welke richting we op wilden gaan en hierbij verschillende tehma’s verzonnen die spelen in de omgeving van Scheveningen en Den Haag.</p>
+                  </div>
+                </Col>
+                <Col xs={ 3 }>
+                  <div className={ styles.deskresearchCard }>
+                    <h3 className={ styles.deskresearchCardTitle }>De problemen</h3>
+                    <p className={ styles.deskresearchCardText }>Er is gekeken naar de soorten problemen die zich in de omgeving afspelen. Denk hierbij aan bijvoorbeeld afval, geluidsoverlast, straatraces. Voor een van deze problemen willen we graag een oplossing bedenken.</p>
+                  </div>
+                </Col>
+                <Col xs={ 3 }>
+                <div className={ styles.deskresearchCard }>
+                    <h3 className={ styles.deskresearchCardTitle }>Doelgroep</h3>
+                    <p className={ styles.deskresearchCardText }>
+                        Nadat er een aantal thema’s waren gekozen, hebben we nagedacht over welke doelgroep we voornamelijk willen aanspreken. Dit zijn de personen waar wij een oplossing voor gaan bedenken in ons thema.</p>
+                </div>
+                </Col>
+                <Col xs={ 3 }>
+                  <div className={ styles.deskresearchCard }>
+                    <h3 className={ styles.deskresearchCardTitle }>Bestaande toepassingen</h3>
+                    <p className={ styles.deskresearchCardText }>Er komt een stukje research bij kijken om te zien wat voor bestaande oplossingen er al gemaakt zijn in het kader van ons concept. Hieruit kunnen we eventueel inspiratie halen en op verder werken.</p>
+                  </div>
+                </Col>
+              </Row>
+            </Container>
+          </div>
+
+          <div className={ styles.designGuidelines }>
+            <h3 className={ styles.deskresearchSmallTitle }>Design guidelines</h3>
             <Row>
-              <Col xs={ 3 }>
-                <div className={ styles.deskresearchCard }>
-                  <h3 className={ styles.deskresearchCardTitle }>Deskresearch 1</h3>
-                  <p className={ styles.deskresearchCardText }>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed augue ut velit vehicula malesuada non at diam. Fusce ac tristique libero. Duis gravida augue vitae tempor pharetra. Quisque porta, metus vel fermentum pharetra, odio magna ultricies est, auctor pellentesque ex massa in felis.  Integer bibendum tincidunt mauris, vehicula commodo libero aliquet pretium. Curabitur ullamcorper nisi nibh.</p>
+              <Col xs={ 4 }>
+                <div>
+
                 </div>
               </Col>
-              <Col xs={ 3 }>
-                <div className={ styles.deskresearchCard }>
-                  <h3 className={ styles.deskresearchCardTitle }>Deskresearch 1</h3>
-                  <p className={ styles.deskresearchCardText }>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed augue ut velit vehicula malesuada non at diam. Fusce ac tristique libero. Duis gravida augue vitae tempor pharetra. Quisque porta, metus vel fermentum pharetra, odio magna ultricies est, auctor pellentesque ex massa in felis.  Integer bibendum tincidunt mauris, vehicula commodo libero aliquet pretium. Curabitur ullamcorper nisi nibh.</p>
-                </div>
+              <Col xs={ 4 }>
+
               </Col>
-              <Col xs={ 3 }>
-              <div className={ styles.deskresearchCard }>
-                  <h3 className={ styles.deskresearchCardTitle }>Deskresearch 1</h3>
-                  <p className={ styles.deskresearchCardText }>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed augue ut velit vehicula malesuada non at diam. Fusce ac tristique libero. Duis gravida augue vitae tempor pharetra. Quisque porta, metus vel fermentum pharetra, odio magna ultricies est, auctor pellentesque ex massa in felis.  Integer bibendum tincidunt mauris, vehicula commodo libero aliquet pretium. Curabitur ullamcorper nisi nibh.</p>
-              </div>
-              </Col>
-              <Col xs={ 3 }>
-                <div className={ styles.deskresearchCard }>
-                  <h3 className={ styles.deskresearchCardTitle }>Deskresearch 1</h3>
-                  <p className={ styles.deskresearchCardText }>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed augue ut velit vehicula malesuada non at diam. Fusce ac tristique libero. Duis gravida augue vitae tempor pharetra. Quisque porta, metus vel fermentum pharetra, odio magna ultricies est, auctor pellentesque ex massa in felis.  Integer bibendum tincidunt mauris, vehicula commodo libero aliquet pretium. Curabitur ullamcorper nisi nibh.</p>
-                </div>
+              <Col xs={ 4 }>
+
               </Col>
             </Row>
           </div>

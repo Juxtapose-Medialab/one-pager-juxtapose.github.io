@@ -17,12 +17,12 @@ class Home extends React.Component {
       <React.Fragment>
         <Hero />
         <Navigation />
-        <Container>
+
           <ProductIntroSection />
           <Process />
           {/* <ProductSlider /> */}
           <TeamMembers />
-        </Container>
+
       </React.Fragment>
     )
   }

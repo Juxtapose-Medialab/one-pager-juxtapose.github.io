@@ -11,7 +11,7 @@ const cn = classNames.bind(styles);
 class ProductIntroSection extends React.Component {
   render() {
     return (
-      <>
+      <Container>
         <h2 className={ styles.productTitle }>Product</h2>
         <Row className={ styles.row }>
           <Col className={ cn('col') } xs={ 6 }>
@@ -45,7 +45,7 @@ class ProductIntroSection extends React.Component {
             </div>
           </Col>
         </Row>
-        </>
+      </Container>
     )
   }
 }
