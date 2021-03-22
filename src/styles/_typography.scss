@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+$tp-custom-font-heading: 'Cambon';
+$tp-custom-font-body: 'InformaPro';
+
+$tp-heading: $tp-custom-font-heading, Helvetica, sans-serif;
+$tp-body: $tp-custom-font-body, Helvetica, sans-serif;
+
+$fn-weight--regular: 400;
+$fn-weight--bold: 700;
+$fn-weight--extra-bold: 800;
+
+// Include Gilroy
+@font-face {
+  font-family: $tp-custom-font-heading;
+  font-display: swap;
+  src: url('../static/fonts/Cambon-Regular.woff2') format('woff2'),
+       url('../static/fonts/Cambon-Regular.woff') format('woff');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: $tp-custom-font-heading;
+  font-display: swap;
+  src: url('../static/fonts/Cambon-Bold.woff2') format('woff2'),
+       url('../static/fonts/Cambon-Bold.woff') format('woff');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: $tp-custom-font-heading;
+  font-display: swap;
+  src: url('../static/fonts/Cambon-ExtraBold.woff2') format('woff2'),
+       url('../static/fonts/Cambon-ExtraBold.woff') format('woff');
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: $tp-custom-font-body;
+  font-display: swap;
+  src: url('../static/fonts/InformaPro-Normal.woff2') format('woff2');
+  font-weight: 500;
+}

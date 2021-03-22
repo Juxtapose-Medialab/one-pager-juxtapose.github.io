@@ -1,11 +1,23 @@
+@import "../../styles/typography";
+
 .teamMembers {
   // padding-top: 8rem;
 }
 
+.teamMemberCardText
+.teamMembersTitle,
+.teamMemberName,
+.educationTitle {
+  font-family: $tp-heading;
+  font-weight: $fn-weight--bold;
+}
+
 .teamMembersTitle {
-  font-size: 4rem;
+  font-family: $tp-heading;
+  font-weight: $fn-weight--bold;
+  font-size: 5.6rem;
   text-align: center;
-  margin-bottom: 2.2rem;
+  margin-bottom: 10.8rem;
   color: #274fc4;
 }
 
@@ -40,8 +52,10 @@
 
 .teamMemberName {
   color: #274fc4;
+  margin-bottom: 1rem;
 }
 .teamMemberText {
+  font-family: 'Open Sans', sans-serif;
   color: #7291ed;
 }
 
@@ -101,13 +115,11 @@
 }
 
 .educationTitle {
-  color: #274fc4;
-}
-
-.educationTitle {
   font-size: 3.3rem;
+  font-weight: 600;
   margin-top: 4.4rem;
   margin-bottom: 4.4rem;
+  color: #274fc4;
 }
 
 .juxtaposeImage {

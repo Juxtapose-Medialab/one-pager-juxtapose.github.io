@@ -1,5 +1,6 @@
 @import "bootstrap/dist/css/bootstrap.css";
 
+
 /**
  * 10px = 1rem (:10)
  */
@@ -33,3 +34,7 @@
 .juxtaposeImage {
   width: 2rem;
 }
+
+/**
+ * Typography
+ */

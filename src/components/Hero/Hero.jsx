@@ -25,7 +25,8 @@ class Hero extends React.Component {
           <source src={sample} type='video/mp4' />
         </video>
         <div className={ styles.heroVideoOverlay }>
-          <h1 className={ styles.heroVideoTitle }>Hier moet een slogan</h1>
+          <h1 className={ styles.heroVideoTitle }>
+The solution for crowds in Scheveningen</h1>
         </div>
       </React.Fragment>
     )

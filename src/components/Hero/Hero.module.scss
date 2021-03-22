@@ -1,3 +1,5 @@
+@import "../../styles/typography";
+
 // .heroVideo {
 //   // position: relative;
 //   // padding-bottom: 56.25%; /* 16:9 */
@@ -49,6 +51,8 @@
 }
 
 .heroVideoTitle {
+  font-family: $tp-heading;
+  font-weight: $fn-weight--bold;
   font-size: 10rem;
   color: white;
 }
