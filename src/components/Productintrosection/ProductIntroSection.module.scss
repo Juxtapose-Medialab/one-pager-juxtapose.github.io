@@ -1,0 +1,95 @@
+@import "../../styles/typography";
+
+.productText,
+.productText2,
+.productImageWrapper2,
+.productImageWrapper {
+    // margin-bottom: 8.8rem;
+}
+
+.productTitle {
+    font-family: $tp-heading;
+    font-weight: $fn-weight--bold;
+    font-size: 5.6rem;
+    text-align: center;
+    margin-bottom: 10.8rem;
+    margin-top: 10.8rem;
+    color: #274fc4;
+}
+
+.productText {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: #000;
+    max-width: 50rem;
+}
+
+.productText2Col {
+    padding: 10rem 0;
+}
+
+.squareBehind {
+    background-color: #d6e5ff;
+    width: 78rem;
+    height: 56.8rem;
+    opacity: .5;
+}
+
+.productImageWrapper {
+    position: absolute;
+    overflow: hidden;
+}
+
+.productImageWrapper1,
+.productImageWrapper3 {
+    top: 8rem;
+    right: 10rem;
+    width: 73.2rem;
+    height: 40.9rem;
+}
+
+.productImageWrapper2 {
+    width: 50.7rem;
+    height: 40.9rem;
+}
+
+.productImage {
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+    position: relative;
+    left: 50%;
+    top: 50%;
+}
+
+.productImage2 {
+    object-fit: cover;
+    width: 100%;
+}
+
+.col2 {
+    justify-content: flex-end;
+    // background-color: pink;
+    align-items: center;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.productImageCol2,
+.productImageCol3 {
+    // background-color: green;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+}
+
+.row {
+    margin-bottom: 10.8rem;
+    // background-color: purple;
+}

@@ -1,0 +1,36 @@
+@import "../../styles/typography";
+
+.navigation {
+  position: absolute;
+  top: 2.2rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.navigationList {
+  display: flex;
+  padding: 0;
+}
+
+.navigationListItem {
+  list-style-type: none;
+  font-size: 2.8rem;
+  color: #fff;
+
+  + .navigationListItem {
+    margin-left: 2rem;
+  }
+}
+
+.navigationLink {
+  font-family: 'Open sans', sans-serif;
+  font-weight: 700;
+  color: inherit;
+  text-decoration: none;
+  letter-spacing: .2rem;
+  font-size: 2.4rem;
+}
+
+.navigationLink:hover {
+  color: inherit;
+}

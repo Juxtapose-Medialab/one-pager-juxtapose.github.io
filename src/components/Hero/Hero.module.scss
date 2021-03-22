@@ -1,0 +1,58 @@
+@import "../../styles/typography";
+
+// .heroVideo {
+//   // position: relative;
+//   // padding-bottom: 56.25%; /* 16:9 */
+//   // padding-top: 2.5rem;
+//   // height: 0;
+//   // overflow: hidden;
+//   padding-bottom: 66.66666667%;
+//   height: 0;
+//   position: absolute;
+//   left: 0;
+//   top: 0;
+//   width: 100%;
+// }
+
+// .heroVideo iframe {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   pointer-events: none;
+//   // position: absolute;
+//   // top: 0;
+//   // left: 0;
+//   // width: 100%;
+//   // height: 100%;
+//   // pointer-events: none !important;
+// }
+
+// .heroContainer {
+//   position: relative;
+//   overflow: hidden;
+//   width: 100%;
+//   height: 100%;
+// }
+
+
+.heroVideo {
+  position: relative;
+  width: 100%;
+  z-index: 0;
+}
+
+.heroVideoOverlay {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  color: green;
+  z-index: 99;
+}
+
+.heroVideoTitle {
+  font-family: $tp-heading;
+  font-weight: $fn-weight--bold;
+  font-size: 10rem;
+  color: white;
+}
