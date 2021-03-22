@@ -13,7 +13,7 @@ const cn = classNames.bind(styles);
 class Process extends React.Component {
   render() {
     return (
-        <div className={ styles.process }>
+        <section className={ cn('process') } id="process">
           <h2 className={ styles.processTitle }>Process</h2>
           <div className={ styles.deskresearch }>
             <Container>
@@ -79,7 +79,7 @@ class Process extends React.Component {
               </Row>
             </Container>
           </div>
-        </div>
+        </section>
     )
   }
 }
