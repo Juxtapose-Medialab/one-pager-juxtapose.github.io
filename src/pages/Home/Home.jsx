@@ -5,6 +5,7 @@ import ProductSlider from '../../components/ProductSlider/ProductSlider';
 import Hero from '../../components/Hero/Hero';
 import Navigation from '../../components/Navigation/Navigation';
 import Process from '../../components/Process/Process';
+import Concepts from '../../components/Concepts/Concepts';
 import TeamMembers from '../../components/TeamMembers/TeamMembers';
 
 class Home extends React.Component {
@@ -20,6 +21,7 @@ class Home extends React.Component {
 
           <ProductIntroSection />
           <Process />
+          <Concepts />
           {/* <ProductSlider /> */}
           <TeamMembers />
 
