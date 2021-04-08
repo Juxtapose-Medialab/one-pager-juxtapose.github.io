@@ -21,7 +21,7 @@ class Home extends React.Component {
 
           <ProductIntroSection />
           <Process />
-          <Concepts />
+          {/* <Concepts /> */}
           {/* <ProductSlider /> */}
           <TeamMembers />
 

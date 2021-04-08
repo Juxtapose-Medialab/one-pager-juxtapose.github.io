@@ -19,7 +19,7 @@
 
 .productText {
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.8rem;
+    font-size: 2.4rem;
     font-weight: 300;
     color: #000;
     max-width: 50rem;
@@ -42,7 +42,8 @@
 }
 
 .productImageWrapper1,
-.productImageWrapper3 {
+.productImageWrapper3,
+.productImageWrapper5 {
     top: 8rem;
     right: 10rem;
     width: 73.2rem;
@@ -54,17 +55,39 @@
     height: 40.9rem;
 }
 
+.productImageWrapper4 {
+    width: 48rem;
+}
+
+.productImageWrapper6 {
+    width: 64rem;
+}
+
+.productImageWrapper2Iphones {
+    width: 58.7rem;
+    height: 40.9rem;
+}
+
 .productImage {
     // min-width: 100%;
     // min-height: 100%;
-    object-position: 20rem 0;
     transform: translate(-50%, -50%);
     position: relative;
     left: 50%;
     top: 50%;
+    background-color: green;
 }
 
-.productImage2 {
+.productImage1 {
+    object-position: 20rem 0;
+}
+
+.productImage2,
+.productImage3 {
+    width: 100%;
+}
+
+.productImageWhiteBackground {
     object-fit: cover;
     width: 100%;
 }
@@ -79,6 +102,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 .productImageCol2,

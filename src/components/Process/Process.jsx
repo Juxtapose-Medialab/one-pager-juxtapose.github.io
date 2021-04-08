@@ -9,6 +9,13 @@ import safety from '../../static/images/safety.svg';
 import population from '../../static/images/population.svg';
 import arrowRight from '../../static/images/arrow-right.svg';
 
+import concept1 from '../../static/images/concept1.png';
+import concept2 from '../../static/images/concept2.png';
+import concept3 from '../../static/images/concept3.png';
+import storyboardImage from '../../static/images/storyboard.png';
+
+import interfaces from '../../static/images/interface.png';
+
 const cn = classNames.bind(styles);
 
 class Process extends React.Component {
@@ -138,6 +145,34 @@ class Process extends React.Component {
                 </Col>
               </Row>
               <Row></Row>
+            </Container>
+          </div>
+          <div className={ styles.concepts }>
+            <Container>
+              <h3 className={ cn('smallTitle') }>Different concepts</h3>
+              <Row>
+                <Col xs={ 4 } className={ styles.conceptImageColumn }>
+                  <img src={ concept1 } className={ styles.conceptImage } />
+                </Col>
+                <Col xs={ 4 } className={ styles.conceptImageColumn }>
+                  <img src={ concept2 } className={ styles.conceptImage } />
+                </Col>
+                <Col xs={4 }className={ styles.conceptImageColumn }>
+                  <img src={ concept3 } className={ styles.conceptImage } />
+                </Col>
+              </Row>
+              <div className={ styles.storyboard }>
+                <Container className={ styles.storyboardContainer }>
+                  <h3 className={ cn('smallTitle') }>Storyboard final concept</h3>
+                  <img src={ storyboardImage } className={ styles.storyboardImage } />
+                </Container>
+              </div>
+            </Container>
+          </div>
+          <div className={ styles.interfaceDesign }>
+            <Container className={ styles.interfaceDesignContainer }>
+              <h3 className={ cn('smallTitle') }>Interface design bord strand</h3>
+              <img src={ interfaces } className={ styles.interfaceDesignImage } />
             </Container>
           </div>
         </section>

@@ -2,8 +2,11 @@ import React from "react";
 import { Container, Row, Col } from 'react-bootstrap';
 import styles from './ProductIntroSection.module.scss';
 import scheveningenImage1 from '../../static/images/beach.png';
-import mockup from '../../static/images/mockup.png';
-import mockbeach from '../../static/images/mockonbeach.png';
+import iphoneMockups from '../../static/images/iphone-mockups.png';
+import iphoneHandMockup from '../../static/images/iphone-hand-mockup.png';
+import mockupParking from '../../static/images/board-mockup.png';
+import mockupScheveningen from '../../static/images/board-mockup-beach.png';
+import iphoneLocations from '../../static/images/location-mockups.png';
 import classNames from 'classnames/bind';
 
 const cn = classNames.bind(styles);
@@ -21,14 +24,14 @@ class ProductIntroSection extends React.Component {
             <Col className={ cn('col', 'productImageCol2') } xs={ 6 }>
               <div className={ styles.squareBehind }></div>
                 <div className={ cn('productImageWrapper', 'productImageWrapper1')}>
-                  <img src={ scheveningenImage1 } className={ styles.productImage } />
+                  <img src={ scheveningenImage1 } className={ cn('productImage', 'productImage1') } />
                 </div>
             </Col>
           </Row>
           <Row className={ styles.row }>
             <Col className={ styles.col } xs={ 6 }>
-              <div className={ cn('productImageWrapper', 'productImageWrapper2') }>
-                <img src={ mockup } className={ styles.productImage2 } />
+              <div className={ cn('productImageWrapper', 'productImageWrapper2Iphones') }>
+                <img src={ iphoneMockups } className={ cn('productImageWhiteBackground') } />
               </div>
             </Col>
             <Col className={ cn('col', 'productText2Col' )} xs={ 6 }>
@@ -36,20 +39,20 @@ class ProductIntroSection extends React.Component {
             </Col>
           </Row>
           <Row className={ styles.row }>
-            <Col className={ styles.col } xs={ 6 }>
+            <Col className={ cn('col') } xs={ 6 }>
               <p className={ styles.productText }>Voordat de gebruiker in de auto stapt, kunnen zij via de app alvast checken waar het wel/niet druk is. Ook is er een route en openbaar vervoer pagina geïntegreerd in de app, om de reis zo makkelijk mogelijk te maken.</p>
             </Col>
-            <Col xs={ 6 } className={ styles.productImageCol3 }>
+            <Col className={ cn('col', 'productImageCol2') } xs={ 6 }>
               <div className={ styles.squareBehind }></div>
-              <div className={ cn('productImageWrapper', 'productImageWrapper3') }>
-                <img src={ mockbeach } className={ styles.productImage } />
-              </div>
+                <div className={ cn('productImageWrapper', 'productImageWrapper3')}>
+                  <img src={ iphoneHandMockup } className={ cn('productImage', 'productImage2') } />
+                </div>
             </Col>
           </Row>
           <Row className={ styles.row }>
             <Col className={ styles.col } xs={ 6 }>
-              <div className={ cn('productImageWrapper', 'productImageWrapper2') }>
-                <img src={ mockup } className={ styles.productImage2 } />
+              <div className={ cn('productImageWrapper', 'productImageWrapper4') }>
+                <img src={ mockupParking } className={ styles.productImageWhiteBackground } />
               </div>
             </Col>
             <Col className={ cn('col', 'productText2Col' )} xs={ 6 }>
@@ -62,15 +65,15 @@ class ProductIntroSection extends React.Component {
             </Col>
             <Col className={ cn('col', 'productImageCol2') } xs={ 6 }>
               <div className={ styles.squareBehind }></div>
-                <div className={ cn('productImageWrapper', 'productImageWrapper1')}>
-                  <img src={ scheveningenImage1 } className={ styles.productImage } />
+                <div className={ cn('productImageWrapper', 'productImageWrapper5')}>
+                  <img src={ mockupScheveningen } className={ cn('productImage', 'productImage3')} />
                 </div>
             </Col>
           </Row>
           <Row className={ styles.row }>
             <Col className={ styles.col } xs={ 6 }>
-              <div className={ cn('productImageWrapper', 'productImageWrapper2') }>
-                <img src={ mockup } className={ styles.productImage2 } />
+              <div className={ cn('productImageWrapper', 'productImageWrapper6') }>
+                <img src={ iphoneLocations } className={ styles.productImageWhiteBackground } />
               </div>
             </Col>
             <Col className={ cn('col', 'productText2Col' )} xs={ 6 }>
