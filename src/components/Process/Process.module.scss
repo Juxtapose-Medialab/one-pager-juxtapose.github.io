@@ -224,16 +224,33 @@
 
 .interfaceDesign {
   padding-top: 10.8rem;
+  background-color: #f7faff;
+}
+
+.interfaceDesignApp {
+  padding-top: 10.8rem;
   padding-bottom: 10.8rem;
   background-color: #f7faff;
 }
 
+.interfaceDesignAppRow1 {
+  margin-bottom: 4.2rem;
+}
+
+.interfaceDesignAppRow2 {
+  margin-bottom: 12.8rem;
+}
+
 .interfaceDesignContainer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
 .interfaceDesignImage {
   max-width: 120rem;
   margin: 0 auto;
+}
+.interfaceDesignAppImage {
+  max-width: 18rem;
 }

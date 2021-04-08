@@ -16,6 +16,24 @@ import storyboardImage from '../../static/images/storyboard.png';
 
 import interfaces from '../../static/images/interface.png';
 
+import interface1 from '../../static/images/interface-1.png';
+import interface2 from '../../static/images/interface-2.png';
+import interface3 from '../../static/images/interface-3.png';
+import interface4 from '../../static/images/interface-4.png';
+import interface5 from '../../static/images/interface-5.png';
+import interface6 from '../../static/images/interface-6.png';
+import interface7 from '../../static/images/interface-7.png';
+import interface8 from '../../static/images/interface-8.png';
+import interface9 from '../../static/images/interface-9.png';
+import interface10 from '../../static/images/interface-10.png';
+import interface11 from '../../static/images/interface-11.png';
+import interface12 from '../../static/images/interface-12.png';
+import interface13 from '../../static/images/interface-13.png';
+import interface14 from '../../static/images/interface-14.png';
+import interface15 from '../../static/images/interface-15.png';
+import interface16 from '../../static/images/interface-16.png';
+import interface17 from '../../static/images/interface-17.png';
+
 const cn = classNames.bind(styles);
 
 class Process extends React.Component {
@@ -173,6 +191,69 @@ class Process extends React.Component {
             <Container className={ styles.interfaceDesignContainer }>
               <h3 className={ cn('smallTitle') }>Interface design bord strand</h3>
               <img src={ interfaces } className={ styles.interfaceDesignImage } />
+            </Container>
+          </div>
+          <div className={ styles.interfaceDesignApp }>
+            <Container>
+              <h3 className={ cn('smallTitle') }>Interface design app</h3>
+              <Row className={ styles.interfaceDesignAppRow1 }>
+                <Col xs={ 2 }>
+                  <img src={ interface1 } className={ styles.interfaceDesignAppImage } />
+                </Col>
+                <Col xs={ 2 }>
+                  <img src={ interface2 } className={ styles.interfaceDesignAppImage } />
+                </Col>
+                <Col xs={ 2 }>
+                  <img src={ interface3 } className={ styles.interfaceDesignAppImage } />
+                </Col>
+                <Col xs={ 2 }>
+                  <img src={ interface4 } className={ styles.interfaceDesignAppImage } />
+                </Col>
+                <Col xs={ 2 }>
+                  <img src={ interface5 } className={ styles.interfaceDesignAppImage } />
+                </Col>
+                <Col xs={ 2 }>
+                  <img src={ interface6 } className={ styles.interfaceDesignAppImage } />
+                </Col>
+              </Row>
+              <Row className={ styles.interfaceDesignAppRow2 }>
+                <Col xs={ 2 }>
+                  <img src={ interface7 } className={ styles.interfaceDesignAppImage } />
+                </Col>
+                <Col xs={ 2 }>
+                  <img src={ interface8 } className={ styles.interfaceDesignAppImage } />
+                </Col>
+                <Col xs={ 2 }>
+                  <img src={ interface9 } className={ styles.interfaceDesignAppImage } />
+                </Col>
+                <Col xs={ 2 }>
+                  <img src={ interface10 } className={ styles.interfaceDesignAppImage } />
+                </Col>
+                <Col xs={ 2 }>
+                  <img src={ interface11 } className={ styles.interfaceDesignAppImage } />
+                </Col>
+                <Col xs={ 2 }>
+                  <img src={ interface12 } className={ styles.interfaceDesignAppImage } />
+                </Col>
+              </Row>
+              <h3 className={ cn('smallTitle') }>Final design</h3>
+              <Row className={ styles.interfaceDesignAppRow3 }>
+                <Col xs={{ span: 2, offset: 1 }}>
+                  <img src={ interface13 } className={ styles.interfaceDesignAppImage } />
+                </Col>
+                <Col xs={ 2 }>
+                  <img src={ interface14 } className={ styles.interfaceDesignAppImage } />
+                </Col>
+                <Col xs={ 2 }>
+                  <img src={ interface15 } className={ styles.interfaceDesignAppImage } />
+                </Col>
+                <Col xs={ 2 }>
+                  <img src={ interface16 } className={ styles.interfaceDesignAppImage } />
+                </Col>
+                <Col xs={ 2 }>
+                  <img src={ interface17 } className={ styles.interfaceDesignAppImage } />
+                </Col>
+              </Row>
             </Container>
           </div>
         </section>
