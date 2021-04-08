@@ -19,6 +19,7 @@
 
 .deskresearchCard {
   width: 100%;
+  height: 54.2rem;
   padding: 2.2rem;
   border-radius: 2rem;
   border: .2rem solid #274fc4;
@@ -30,7 +31,7 @@
 }
 
 .deskresearchCardTitle {
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   font-size: 2rem;
@@ -41,6 +42,11 @@
   font-family: 'Open Sans', sans-serif;
   font-size: 1.6rem;
   font-weight: 300;
+  margin-bottom: 2.6rem;
+}
+
+.deskresearchCardText:last-child {
+  margin-bottom: 0;
 }
 
 .smallTitle {
@@ -50,22 +56,26 @@
   color: #274fc4;
   letter-spacing: .2rem;
   text-align: center;
-  margin-bottom: 4.2rem;
+  margin-bottom: 6.2rem;
 }
 
 .smallTitleWhite {
   color: #274fc4;
 }
 
+.smallTitleResearch {
+  margin-bottom: 4.2rem !important;
+}
+
 .designGuideline {
   display: flex;
   align-items: center;
-  width: 55rem;
+  // min-width: 55rem;
 }
 
 .designGuidelines {
-  padding-top: 6.8rem;
-  padding-bottom: 6.8rem;
+  padding-top: 10.8rem;
+  padding-bottom: 10.8rem;
   background-color: #f7faff;
 }
 
@@ -76,12 +86,13 @@
 }
 
 .designGuideline:nth-child(1),
-.designGuideline:nth-child(2)
+.designGuideline:nth-child(2),
+.designGuideline:nth-child(3)
 {
   margin-bottom: 6.8rem;
 }
 
-.designGuidelinesCol {
+.designGuidelinesWrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -97,15 +108,15 @@
 
 .designGuideLinesCol3 {
   position: relative;
-  padding: 0;
-  margin: 0;
+  display: flex;
+  align-items: center;
 }
 
 .designGuidelineText {
   color: #274fc4;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
-  font-size: 2.2rem;
+  font-size: 2rem;
 }
 
 .designGuidelineArrow {
@@ -139,4 +150,34 @@
   font-weight: 700;
   color: white;
   text-align: center;
+}
+
+.deskresearchText,
+.deskresearchSubtitle {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.deskresearchText {
+  font-size: 1.8rem;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 2.8rem;
+}
+
+.deskresearchContent {
+  max-width: 83rem;
+  margin: auto;
+  margin-bottom: 10.2rem;
+}
+
+.deskresearchSubtitle {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1.2rem;
+  color: #274fc4;
+}
+
+.deskresearchColumn1 {
+  margin-bottom: 6.4rem;
 }

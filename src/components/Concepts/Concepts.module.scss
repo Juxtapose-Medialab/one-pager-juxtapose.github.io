@@ -16,9 +16,26 @@
   color: #274fc4;
   letter-spacing: .2rem;
   text-align: center;
-  margin-bottom: 4.2rem;
+  margin-bottom: 6.2rem;
 }
 
 .smallTitleFinal {
   margin-top: 10.8rem;
+}
+
+.storyboard {
+  padding-top: 10.8rem;
+  display: flex;
+  justify-content: center;
+}
+
+.storyboardImage {
+  max-width: 95rem;
+  margin: 0 auto;
+}
+
+.storyboardContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
