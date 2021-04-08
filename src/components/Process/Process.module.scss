@@ -4,6 +4,10 @@
 
 }
 
+.container-fluid {
+  padding: 0;
+}
+
 .processTitle {
   font-family: $tp-heading;
   font-weight: $fn-weight--bold;
@@ -253,4 +257,93 @@
 }
 .interfaceDesignAppImage {
   max-width: 18rem;
+}
+
+.interfaceDesignParkingBoards {
+  padding-top: 10.8rem;
+  padding-bottom: 10.8rem;
+  position: relative;
+}
+
+.interfaceDesignParkingBoardsRectangle {
+  // display: flex;
+  // align-items: center;
+  width: 144rem;
+  background-color: #f7faff;
+  height: 28rem;
+}
+
+.interfaceDesignParkingBoardsRectangle1 {
+  position: absolute;
+  right: 0;
+  z-index: 1;
+}
+
+// .rectangleWrapper {
+//   width: 100%;
+//   display: flex;
+//   justify-content: flex-end;
+// }
+
+// .rectangleWrapper1 {
+//   margin-bottom: 10rem;
+// }
+
+.parkingBoardsWrapper {
+  display: flex;
+  width: 100%;
+  position: relative;
+  z-index: 99;
+}
+
+.parkingBoardsWrapper1 {
+  justify-content: center;
+  margin-bottom: 24rem;
+}
+
+.parkingBoardsWrapper2 {
+  justify-content: flex-start;
+  margin-left: 12.6rem;
+}
+
+.parkingBoardRectangleImage {
+  max-width: 30rem;
+
+  + .parkingBoardRectangleImage {
+    margin-left: 4.4rem;
+  }
+}
+
+.parkingArrow {
+  transform: rotate(90deg);
+  max-width: 10.2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.parkingBoardsImagesWrapper {
+  display: flex;
+  // justify-content: center;
+  z-index: 99;
+}
+
+.parkingBoardsImagesWrapper2 {
+  display: flex;
+  justify-content: flex-start;
+  z-index: 99;
+}
+
+.parkingMockup {
+  max-width: 30rem;
+  position: absolute;
+  right: 18rem;
+  top: -10rem;
+}
+
+.bottomArrow {
+  position: absolute;
+  top: 20rem;
+  right: 28rem;
+  max-width: 80rem;
+  z-index: 1;
 }

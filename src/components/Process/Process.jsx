@@ -34,6 +34,15 @@ import interface15 from '../../static/images/interface-15.png';
 import interface16 from '../../static/images/interface-16.png';
 import interface17 from '../../static/images/interface-17.png';
 
+import parkingmap1 from '../../static/images/parkingmap1.png';
+import parkingmap2 from '../../static/images/parkingmap2.png';
+import parkingmap3 from '../../static/images/parkingmap3.png';
+import parkingmap4 from '../../static/images/parkingmap4.png';
+import parkingmap5 from '../../static/images/parkingmap5.png';
+import parkingArrow from '../../static/images/parking-arrow.svg';
+import parkingMockup from '../../static/images/parking-mockup.png';
+import bottomArrow from '../../static/images/bottom-arrow.png';
+
 const cn = classNames.bind(styles);
 
 class Process extends React.Component {
@@ -189,8 +198,33 @@ class Process extends React.Component {
           </div>
           <div className={ styles.interfaceDesign }>
             <Container className={ styles.interfaceDesignContainer }>
-              <h3 className={ cn('smallTitle') }>Interface design bord strand</h3>
+              <h3 className={ cn('smallTitle') }>Interface design bord beach</h3>
               <img src={ interfaces } className={ styles.interfaceDesignImage } />
+            </Container>
+          </div>
+          <div className={ styles.interfaceDesignParkingBoards }>
+            <Container className={ styles.interfaceDesignParkingBoardsContainer }>
+              <h3 className={ cn('smallTitle') }>Interface design parking board</h3>
+                <div className={ cn('parkingBoardsWrapper', 'parkingBoardsWrapper1') }>
+                  {/* <div className={ cn('interfaceDesignParkingBoardsRectangle', 'interfaceDesignParkingBoardsRectangle1' ) }></div> */}
+                  <div className={ styles.parkingBoardsImagesWrapper }>
+                    <img src={ parkingmap1 } className={ styles.parkingBoardRectangleImage } />
+                    <img src={ parkingArrow } className={ styles.parkingArrow } />
+                    <img src={ parkingmap2 } className={ styles.parkingBoardRectangleImage } />
+                    <img src={ parkingArrow } className={ styles.parkingArrow } />
+                    <img src={ parkingmap3 } className={ styles.parkingBoardRectangleImage } />
+                  </div>
+                 <img src={ bottomArrow } className={ styles.bottomArrow } />
+                </div>
+                <div className={ cn('parkingBoardsWrapper', 'parkingBoardsWrapper2') }>
+                  <div className={ cn('parkingBoardsImagesWrapper', 'parkingBoardsImagesWrapper2') }>
+                    <img src={ parkingmap4 } className={ styles.parkingBoardRectangleImage } />
+                    <img src={ parkingArrow } className={ styles.parkingArrow } />
+                    <img src={ parkingmap5 } className={ styles.parkingBoardRectangleImage } />
+                    <img src={ parkingArrow } className={ styles.parkingArrow } />
+                    <img src={ parkingMockup } className={ styles.parkingMockup } />
+                  </div>
+                </div>
             </Container>
           </div>
           <div className={ styles.interfaceDesignApp }>
