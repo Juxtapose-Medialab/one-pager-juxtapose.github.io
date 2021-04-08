@@ -198,13 +198,13 @@ class Process extends React.Component {
           </div>
           <div className={ styles.interfaceDesign }>
             <Container className={ styles.interfaceDesignContainer }>
-              <h3 className={ cn('smallTitle') }>Interface beach display design</h3>
+              <h3 className={ cn('smallTitle') }>Interface design beach display</h3>
               <img src={ interfaces } className={ styles.interfaceDesignImage } />
             </Container>
           </div>
           <div className={ styles.interfaceDesignParkingBoards }>
             <Container className={ styles.interfaceDesignParkingBoardsContainer }>
-              <h3 className={ cn('smallTitle') }>Interface parking display design</h3>
+              <h3 className={ cn('smallTitle') }>Interface design parking display</h3>
                 <div className={ cn('parkingBoardsWrapper', 'parkingBoardsWrapper1') }>
                   {/* <div className={ cn('interfaceDesignParkingBoardsRectangle', 'interfaceDesignParkingBoardsRectangle1' ) }></div> */}
                   <div className={ styles.parkingBoardsImagesWrapper }>
