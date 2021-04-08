@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from 'react-bootstrap';
 import styles from './ProductIntroSection.module.scss';
-import scheveningenImage1 from '../../static/images/druktescheveningen.jpeg';
+import scheveningenImage1 from '../../static/images/beach.png';
 import mockup from '../../static/images/mockup.png';
 import mockbeach from '../../static/images/mockonbeach.png';
 import classNames from 'classnames/bind';
@@ -16,7 +16,7 @@ class ProductIntroSection extends React.Component {
           <h2 className={ styles.productTitle }>Product</h2>
           <Row className={ styles.row }>
             <Col className={ cn('col') } xs={ 6 }>
-              <p className={ styles.productText }> Het concept bestaat uit digitale borden, met een camera/sensor, die verspreid staan door Scheveningen en Den Haag. Op deze borden is te zien hoe druk het is op het strand, zodat mensen de drukke plekken kunnen vermijden en op zoek kunnen gaan naar de minder drukke plekken.  </p>
+              <p className={ styles.productText }>Beachradar is een digitale crowdmanagement tool. Het doel van dit concept/product is om de mensen te verspreiden op een drukke dag. Het gaat hier om een stukje crowdmanagement waardoor plekken niet overvol worden en mensen zich minder gaan ergeren aan de drukte. Door goed van tevoren aan te geven waar het op dit moment druk is, kunnen mensen zich beter anticiperen en op plekken verspreiden. Dit levert voor alle bezoekers een betere ervaring op en daarmee een leukere dag.</p>
             </Col>
             <Col className={ cn('col', 'productImageCol2') } xs={ 6 }>
               <div className={ styles.squareBehind }></div>
@@ -32,18 +32,49 @@ class ProductIntroSection extends React.Component {
               </div>
             </Col>
             <Col className={ cn('col', 'productText2Col' )} xs={ 6 }>
-              <p className={ cn('productText', 'productText2') }>Het bord zelf bestaat uit meerdere zones waarop te zien is hoe druk het in dat gebied is. Dit gebeurt door middel van een camera die scant, en daarmee het aantal mensen telt. Deze data wordt doorgegeven naar het hoofdscherm, waarop een topview te vinden is met alle zones. Zo is het makkelijk te zien waar het te druk is, en waar je rustig heen kan.</p>
+              <p className={ cn('productText', 'productText2') }>Beachradar biedt gebruikers een inkijkje in de drukte op drie verschillende niveau’s, waarbij de data specifieker wordt hoe dichter zij bij het strand komen. Een app voor on the go, een bord bij parkeergelegenheden en een bord op de boulevard.</p>
             </Col>
           </Row>
           <Row className={ styles.row }>
             <Col className={ styles.col } xs={ 6 }>
-              <p className={ styles.productText }>Het doel van dit concept/product is om de mensen te verspreiden op een drukke dag. Het gaat hier om een stukje crowdmanagement waardoor plekken niet overvol worden en mensen zich minder gaan ergeren aan de drukte. Door goed van tevoren aan te geven waar het op dit moment druk is, kunnen mensen zich beter anticiperen en op plekken verspreiden. Dit levert voor alle bezoekers een betere ervaring op en daarmee een leukere dag.</p>
+              <p className={ styles.productText }>Voordat de gebruiker in de auto stapt, kunnen zij via de app alvast checken waar het wel/niet druk is. Ook is er een route en openbaar vervoer pagina geïntegreerd in de app, om de reis zo makkelijk mogelijk te maken.</p>
             </Col>
             <Col xs={ 6 } className={ styles.productImageCol3 }>
               <div className={ styles.squareBehind }></div>
               <div className={ cn('productImageWrapper', 'productImageWrapper3') }>
                 <img src={ mockbeach } className={ styles.productImage } />
               </div>
+            </Col>
+          </Row>
+          <Row className={ styles.row }>
+            <Col className={ styles.col } xs={ 6 }>
+              <div className={ cn('productImageWrapper', 'productImageWrapper2') }>
+                <img src={ mockup } className={ styles.productImage2 } />
+              </div>
+            </Col>
+            <Col className={ cn('col', 'productText2Col' )} xs={ 6 }>
+              <p className={ cn('productText', 'productText2') }>Het bord bij de parkeergelegenheden geeft extra informatie weer over waar andere parkeergelden zich bevinden en hoe druk deze zijn. Zodat men altijd nog kan kiezen om ergens anders heen te gaan als het vol is.</p>
+            </Col>
+          </Row>
+          <Row className={ styles.row }>
+            <Col className={ cn('col') } xs={ 6 }>
+              <p className={ styles.productText }>De borden op de boulevard geven een ingezoomde weergaven van alleen het strand waar de persoon zich op dat moment bevindt, opgedeeld in zones.</p>
+            </Col>
+            <Col className={ cn('col', 'productImageCol2') } xs={ 6 }>
+              <div className={ styles.squareBehind }></div>
+                <div className={ cn('productImageWrapper', 'productImageWrapper1')}>
+                  <img src={ scheveningenImage1 } className={ styles.productImage } />
+                </div>
+            </Col>
+          </Row>
+          <Row className={ styles.row }>
+            <Col className={ styles.col } xs={ 6 }>
+              <div className={ cn('productImageWrapper', 'productImageWrapper2') }>
+                <img src={ mockup } className={ styles.productImage2 } />
+              </div>
+            </Col>
+            <Col className={ cn('col', 'productText2Col' )} xs={ 6 }>
+              <p className={ cn('productText', 'productText2') }>Bij de app en het bord van de parkeergelegenheden staat de kaart met het noorden naar boven. Het bord op de boulevard heeft een kaart waarop het strand horizontaal wordt weergegeven. Tijdens de test met gebruikers kwam naar voren dat zij dit het meest overzichtelijk vinden.</p>
             </Col>
           </Row>
         </Container>

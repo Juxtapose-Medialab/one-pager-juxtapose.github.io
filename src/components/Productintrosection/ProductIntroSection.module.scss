@@ -55,8 +55,9 @@
 }
 
 .productImage {
-    min-width: 100%;
-    min-height: 100%;
+    // min-width: 100%;
+    // min-height: 100%;
+    object-position: 20rem 0;
     transform: translate(-50%, -50%);
     position: relative;
     left: 50%;
